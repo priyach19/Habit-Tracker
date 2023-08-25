@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/css/_header.css">
+<div class="head">
+    <nav class="navbar">
+        <div>
+          <a class="navbar-brand" href="/">
+            <img src="/images/logo3.jpg" alt="Logo" width="40" height="45" class="d-inline-block align-text-top">
+            <span>Habit Tracker</span>
+          </a>
+        </div>
+          <!-- <div class="container-fluid"></div> -->
+          <ul class="nav-list">
+            <%if(locals.user){%>
+            <li>
+               <i class="fa-regular fa-user"></i>&nbsp;&nbsp;
+                <a href="/"><%=locals.user.name%></a>
+            </li>&nbsp;&nbsp;
+            <li>
+                <a href="/users/sign-out">SignOut</a>
+            </li>
+            <%}else{%>
+                <li>
+                    <i class="fa-regular fa-user"></i>&nbsp;&nbsp;<a href="/users/signIn">Sign In</a>
+                </li>
+                <li><a href="/users/signUp">&nbsp;&nbsp;Sign Up</a></li>
+            <%}%>
+          </ul>
+          <!-- <div class="user"><i class="fa-regular fa-user"></i></div> -->
+      
+    </nav>
+ </div>

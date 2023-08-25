@@ -1,0 +1,54 @@
+<link rel="stylesheet" type="text/css" href="/css/sign.css">
+<div class="container">
+ 
+  <div class="login-container">
+    <br>
+    <h2 id="welcome">Welcome on Habbit Tracker app</h2>
+    <div class="logo">
+      <img src="/images/logo3.jpg" width="50" height="45" alt="logo" />
+    </div>
+    <div class="login-form">
+         <form method="post" action="/users/create-session" >
+          <h2 id="welcome">Login</h2>
+        <table>
+          <tr>
+            <td>
+              <label for="email">Email</label>
+            </td>
+            <td>
+              <input type="email" id="email" name="email" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td>
+              <input type="password" id="password" name="password" required />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input
+                id="login-btn"
+                style="
+                  margin-top: 3px;
+                  text-align: center;
+                  color: white;
+                  background-color: transparent;
+                "
+                type="submit"
+                value="Login"
+              />
+            </td>
+          </tr>
+          <br />
+        </table>
+        <br>
+    <div class="register">
+      <span>New User?&ensp;</span> <a href="signUp"><strong>Register</strong></a>
+      <br>
+      <p>Forget Password? &ensp;<a href='/users/forgetPassword'><strong>Click here</strong></a></p>
+    </div>
+  </div>
+</div>
+</div>
+

@@ -1,0 +1,165 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(129, 72, 154);  
+}
+
+.fa-xmark{
+    color: red;
+    cursor: pointer;
+}
+#input{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.input-form input{
+    width: 550px;
+    height: 30px;
+    padding-left: 20px;
+    outline: none;
+    border-radius: 10px;
+    border: 3px solid white;
+   }
+#form-btn{
+    padding:6px 10px;
+    margin-left: 10px;
+    font-weight: 500;
+    color:white;
+    background-color:transparent;
+    border:2px solid white;
+    border-radius: 15px;
+}
+
+#qoute{
+    color:white;
+    text-align: center;
+}
+#symbol{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    font-size: 12px;
+    border-radius:10px;
+}
+#weekly-view__btn , #weekly-view__btn-2{
+   padding:5px 7px;
+   margin-right: 3px;
+   background-color:rgb(63, 15, 63);
+   color: #fff;
+   font-size: 15px;
+   cursor: pointer;
+   border-radius: 10px;
+}
+#weekly-view__btn:hover , #weekly-view__btn-2:hover{
+    background-color:purple;
+}
+
+.habit-list{
+    display: flex;
+     height: 55vh;
+    overflow-x: scroll;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+    padding: 10px;
+}
+
+.habit-list::-webkit-scrollbar{
+    display: none;
+}
+.habit-list-item{
+   background-color: #380f5b7a;
+   width: 650px;
+   height: 70px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 20px;
+   border: 1px solid white;
+   position: relative;
+   border-radius:15px 15px 15px 15px;
+}
+a{
+    text-decoration: none;
+}
+.habit-list-item-name{
+    color: #fff;
+
+}
+.remove{
+    color: rgb(193, 6, 6);
+    margin-left: 5px;
+}
+.favorite{
+    color: white;
+}
+.fas{
+    font-size: 30px;
+}
+.fa-star , .fa-trash{
+    font-size: 25px;
+}
+.fa-check-circle{
+    color: rgb(6, 62, 6);
+}
+.fa-times-circle{
+    color: rgb(143, 8, 8);
+}
+.fa-minus-circle{
+   color:white; 
+}
+
+.weekly__container{
+    width: 670px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 7px;
+    justify-content:center;
+    align-items: center;
+    padding: 8px;
+}
+.weekly__date{
+    width: 80px;
+    height: 70px;
+    background-color: #f2e0e275;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+}
+.weekly__date p{
+    font-size: 12px;
+    position: relative;
+    color:#fff;
+    top: -10px;
+}
+.with-weekly{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+@media screen and (max-width : 700px) {
+    .habit-list-item , .weekly__container{
+    width: 400px;
+  }
+  .fas{
+    font-size: 25px;
+}
+.fa-star , .fa-trash{
+    font-size: 20px;
+}
+}
